@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def add_two_numbers(a:               int, b: int) -> int:
+def add_two_numbers(a: int, b: int) -> int:
     return a + b
 
 
