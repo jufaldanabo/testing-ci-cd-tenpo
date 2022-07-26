@@ -4,14 +4,14 @@ import pytest
 
 
 def test_add_two_numbers():
-    assert (add_two_numbers(1, 2)) == 3
+    assert (add_two_numbers(1, 2)) == 9
     assert (add_two_numbers(-1, 2)) == 1
 
 
 @pytest.fixture()
 def data_raw():
     return Cleaning(
-        df=pd.DataFrame({"identificacion": [1, 2, 3, 4, 5555555, 66666]}),
+        df=pd.DataFrame({"identificacion": [1, 1, 2, 3, 4, 5555555, 66666]}),
         variable="identificacion",
     )
 
